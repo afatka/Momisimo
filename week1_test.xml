@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- 
+Pabrito Grading System grading document. 
+Document created May, 2015
+
+Created by Adam Fatka: adam.fatka@gmail.com
+ -->
+
+
+<!--
+	Avoid using quot marks "" or '', Greater than/less than >< , and ampersands &
+	-->
+
+<grade_tool>
+	<category title = 'One 1' weight = '100'>
+		<subcategory title = 'Scale and Proportion' weight = '70'>
+			<gradeComment>
+				<A>Scale and relative propotions of objects in submission are in line with expectations. Little to no deviation from reference. </A>
+				<C>Scale and relative proportion of objects in submission close to expectation. Mild or few discrepancies from reference present. </C>
+				<F>Scale and relative proportion of objects in submission not in line with expectation. Dramatic or numerous deviations from reference.  </F>
+			</gradeComment>
+			<RMB title = 'Prop'>Proportional right mouse button thing </RMB>
+			<RMB title = 'Scale'>Scale RMB dobang! </RMB>
+		</subcategory>
+		<subcategory>
+			<title>Subsection 2</title>
+			<weight>30</weight>
+			<gradeComment>
+				<A>Scale and relative propotions of objects in submission are in line with expectations. Little to no deviation from reference. </A>
+				<Bplus>blah</Bplus>
+				<B>sdaf</B>
+				<B->lkh</B->
+				<C>Scale and relative proportion of objects in submission close to expectation. Mild or few discrepancies from reference present. </C>
+				<F>Scale and relative proportion of objects in submission not in line with expectation. Dramatic or numerous deviations from reference.  </F>
+			</gradeComment>
+			<RMB title = 'rmb 1'>Right Mouse Button 1.  </RMB>
+		</subcategory>
+	</category>
+
+
+	<grade_box title = 'Late'>Late deduction:</grade_box>
+	
+	<defaults>
+		<auto folder = 'CDC'>False</auto>
+		<output depth = '0'>root</output>
+		<files_type>pdf</files_type><!--comma separated -->
+		<open_files>True</open_files>
+		<!--
+			keywords for naming convention are projNum (replaced with an integer [01])
+			and yearMonth (replaced with 4 digit code (2 digit year, 2 digit month))
+		-->
+		<auto_pickle_filter>True</auto_pickle_filter>
+		<naming_convention></naming_convention>
+		<incomplete>Project does not meet minimum project requirements in order to be complete. Please review project requirements and meet with an instructor for further information.</incomplete>
+		<highnote_intro></highnote_intro>
+		<comment_intro></comment_intro>
+		<default_comment_intro></default_comment_intro>
+		<example_object_intro>Examples of concerns in this section are: </example_object_intro>
+		<total_intro>Grade Total:</total_intro>
+		<print_subgrades>True</print_subgrades>
+		<gradeValue>
+			<Aplus>100</Aplus>
+			<A>100</A>
+			<Bplus>89</Bplus>
+			<B>80</B>
+			<Cplus>79</Cplus>
+			<C>75</C>
+			<D>70</D>
+			<D->30</D->
+			<F>50</F>
+			<F->0</F->
+		</gradeValue>
+		<!-- The named in the gradeEquation markup MUST be the first three (3) letters of the associated section.  The string 'Late' may be used to calculate the late grade influence that is built into the grading plateform. -->
+		<gradeEquation>(One) - Late</gradeEquation>
+	</defaults>
+</grade_tool>
